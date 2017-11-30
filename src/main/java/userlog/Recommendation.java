@@ -1,11 +1,14 @@
 package userlog;
 
+
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Recommendation {
+public class Recommendation  {
+
     public static void main(String[] args) throws SQLException {
         Connection myConn= null;
         Statement myStmt = null;
@@ -26,7 +29,7 @@ public class Recommendation {
                 String mno = myRs.getString("Keywords");
                 String pqr[] = mno.split(",");
                 List<String> xyz = new ArrayList<String>();
-            //    System.out.print(pqr[0]);
+
                 for (int i = 0; i < pqr.length; i++) {
                     xyz.add(pqr[i]);
                 }
@@ -40,6 +43,9 @@ public class Recommendation {
                         if (keywords.get(j).contains(item)) {
                             count++;
                         }
+                        if (count >=3){
+                            break;
+                        }
                     }
                     if (count >= 3) {
                         String m ="";
@@ -48,18 +54,25 @@ public class Recommendation {
                             if ((!keywords.get(i).contains(item))) {
                                 recommenderList.add(i, item);
                                 System.out.println("Recommended Item for" + " " + userID.get(i) + " " + recommenderList.get(i));
-                                m = m + recommenderList.get(i);
-                                PreparedStatement myPstm = myConn.prepareStatement("UPDATE user_log SET RECOMMENDATIONS = ? WHERE UserID = ?");
-                                myPstm.setString(1,m);
-                                myPstm.setString(2,userID.get(i));
-                                myPstm.executeUpdate();
+                                if (! (recommenderList.get(i).length()>=3)) {
+                                    m = m + recommenderList.get(i) + ",";
+                                    PreparedStatement myPstm = myConn.prepareStatement("UPDATE user_log SET RECOMMENDATIONS = ? WHERE UserID = ?");
+                                    myPstm.setString(1, m);
+                                    myPstm.setString(2, userID.get(i));
+                                    myPstm.executeUpdate();
+                                }
 //                                  String sql1 = "INSERT INTO Recommendations " + "VALUES ()";
 //                                String sql2 = recommenderList.get(i);
 //                                myStmt.executeUpdate(sql1 + "VALUES (" + sql2 + ")");
 //                                PreparedStatement ps = myConn.prepareStatement("insert into user_log(Recommendations) values(?)");
 //                                ps.setString(0,recommenderList.get(i));
                             }
+
                         }
+                        if(recommenderList.size() ==0){
+                            recommenderList.add(keywords.get(i).get(i));
+                        }
+
 //                            String sql = "INSERT INTO user_log(Recommendations) VALUES(?) WHERE  (UserId =?)";
 //                            try (
 //
@@ -75,17 +88,22 @@ public class Recommendation {
                             if (!keywords.get(j).contains(item)) {
                                 recommenderList.add(j, item);
                                 System.out.println("Recommended Item for" +" " + userID.get(j) + " " + recommenderList.get(j));
-                                n = n + recommenderList.get(j);
+                                n = n + recommenderList.get(j) + ",";
                                 PreparedStatement myPstm = myConn.prepareStatement("UPDATE user_log SET RECOMMENDATIONS = ? WHERE UserID = ?");
                                 myPstm.setString(1,n);
                                 myPstm.setString(2,userID.get(j));
                                 myPstm.executeUpdate();
+
 //                                String sql1 = "INSERT INTO Recommendations " + "VALUES ()";
 //                                String sql2 = recommenderList.get(j);
 //                                myStmt.executeUpdate(sql1 + "VALUES (" + sql2 + ")");
                             }
+
                         }
                     }
+//                    if(count>=3){
+//                        break;
+//                    }
                 }
             }
 //            for (int i=0; i< recommenderList.size();i++){
@@ -127,4 +145,5 @@ public class Recommendation {
             }
         }
     }
+
 }
