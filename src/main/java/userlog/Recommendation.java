@@ -2,21 +2,25 @@ package userlog;
 
 
 
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Recommendation  {
+public class Recommendation
+{
 
     public static void main(String[] args) throws SQLException {
+
         Connection myConn= null;
         Statement myStmt = null;
         ResultSet myRs = null;
         try {
-            myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testDB", "root", "root");
+            myConn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Anand J Bangad\\testDB.db");
             myStmt = myConn.createStatement();
-            myRs = myStmt.executeQuery("select * from user_log");
+            System.out.println("Opened database successfully");
+            myRs = myStmt.executeQuery("select * from users");
 //            while (myRs.next()) {
 //                System.out.println(myRs.getString("UserID") + ", " + myRs.getString("Keywords"));
 //            }
@@ -25,8 +29,8 @@ public class Recommendation  {
             ArrayList<List<String>> keywords = new ArrayList<List<String>>();
             int rowLength = 0;
             while (myRs.next()) {
-                userID.add(rowLength, myRs.getString("UserID"));
-                String mno = myRs.getString("Keywords");
+                userID.add(rowLength, myRs.getString("id"));
+                String mno = myRs.getString("keywords");
                 String pqr[] = mno.split(",");
                 List<String> xyz = new ArrayList<String>();
 
@@ -56,7 +60,7 @@ public class Recommendation  {
                                 System.out.println("Recommended Item for" + " " + userID.get(i) + " " + recommenderList.get(i));
                                 if (! (recommenderList.get(i).length()>=3)) {
                                     m = m + recommenderList.get(i) + ",";
-                                    PreparedStatement myPstm = myConn.prepareStatement("UPDATE user_log SET RECOMMENDATIONS = ? WHERE UserID = ?");
+                                    PreparedStatement myPstm = myConn.prepareStatement("UPDATE users SET recommendation = ? WHERE id = ?");
                                     myPstm.setString(1, m);
                                     myPstm.setString(2, userID.get(i));
                                     myPstm.executeUpdate();
@@ -89,7 +93,7 @@ public class Recommendation  {
                                 recommenderList.add(j, item);
                                 System.out.println("Recommended Item for" +" " + userID.get(j) + " " + recommenderList.get(j));
                                 n = n + recommenderList.get(j) + ",";
-                                PreparedStatement myPstm = myConn.prepareStatement("UPDATE user_log SET RECOMMENDATIONS = ? WHERE UserID = ?");
+                                PreparedStatement myPstm = myConn.prepareStatement("UPDATE users SET recommendation = ? WHERE id = ?");
                                 myPstm.setString(1,n);
                                 myPstm.setString(2,userID.get(j));
                                 myPstm.executeUpdate();

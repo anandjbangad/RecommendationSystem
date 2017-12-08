@@ -7,8 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="708a1adc-0671-45d6-affe-7667fe610569" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/userlog/Recommendation.class" afterPath="$PROJECT_DIR$/target/classes/userlog/Recommendation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recommendation.iml" afterPath="$PROJECT_DIR$/Recommendation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/userlog/Recommendation.java" afterPath="$PROJECT_DIR$/src/main/java/userlog/Recommendation.java" />
     </list>
@@ -26,26 +35,32 @@
       <file leaf-file-name="Recommendation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="2" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="320">
+              <caret line="95" column="115" lean-forward="false" selection-start-line="95" selection-start-column="115" selection-end-line="95" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#755#763#0" expanded="true" />
-                <element signature="e#819#827#0" expanded="true" />
-                <element signature="e#891#905#0" expanded="true" />
-                <element signature="e#1191#1199#0" expanded="true" />
-                <element signature="e#2809#2904#0" expanded="false" />
-                <element signature="e#3485#3597#0" expanded="false" />
-                <element signature="e#4814#4907#0" expanded="false" />
-                <element signature="e#5272#5331#0" expanded="false" />
-                <marker date="1512019009962" expanded="true" signature="516:530" ph="select * fro... employees" />
-                <marker date="1512019009962" expanded="true" signature="516:538" ph="select * fro... user_log" />
-                <marker date="1512019009962" expanded="true" signature="2523:2579" ph="UPDATE user_... " />
-                <marker date="1512019009962" expanded="true" signature="2529:2579" ph="INSERT INTO user_log... " />
-                <marker date="1512019009962" expanded="true" signature="4575:4631" ph="UPDATE user_... " />
-                <marker date="1512019009962" expanded="true" signature="4863:4905" ph="INSERT INTO Recommendations... " />
-                <marker date="1512019009962" expanded="true" signature="5043:5064" ph="INSERT INTO Recommendations... " />
+                <element signature="e#815#823#0" expanded="true" />
+                <element signature="e#879#887#0" expanded="true" />
+                <element signature="e#951#965#0" expanded="true" />
+                <element signature="e#1247#1255#0" expanded="true" />
+                <element signature="e#2857#2952#0" expanded="false" />
+                <element signature="e#4854#4947#0" expanded="false" />
+                <element signature="e#5312#5371#0" expanded="false" />
+                <marker date="1512770028050" expanded="true" signature="579:597" ph="select * fro... user_log" />
+                <marker date="1512770028050" expanded="true" signature="579:598" ph="select * fro... users" />
+                <marker date="1512770028050" expanded="true" signature="2579:2627" ph="UPDATE user_... " />
+                <marker date="1512770028050" expanded="true" signature="4623:4671" ph="UPDATE user_... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recommendation_SQLite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation_SQLite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,8 +68,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="844">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,10 +134,16 @@
       <find>,117,</find>
       <find>,1,</find>
       <find>Sys</find>
+      <find>user_log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ExceptionsHandeledWithoutList" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -171,10 +192,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2588" />
-    <option name="y" value="102" />
-    <option name="width" value="781" />
-    <option name="height" value="830" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,6 +214,8 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,27 +231,33 @@
             <path>
               <item name="Recommendation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recommendation" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Recommendation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recommendation" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Recommendation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recommendation" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Recommendation_jar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recommendation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recommendation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="userlog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,14 +480,17 @@
       <workItem from="1511720098142" duration="9241000" />
       <workItem from="1511826448984" duration="12633000" />
       <workItem from="1512010467611" duration="8010000" />
+      <workItem from="1512075763266" duration="1513000" />
+      <workItem from="1512235747633" duration="23000" />
+      <workItem from="1512766642602" duration="2676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35826000" />
+    <option name="totallyTimeSpent" value="40038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -471,12 +502,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3744076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.023696683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37330317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15271494" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31260228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -515,25 +546,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java</url>
-          <line>88</line>
+          <line>92</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java</url>
-          <line>108</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -543,27 +562,112 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/convert/MovieDataConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="80" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/prediction/recommender/ItemRecommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/movies.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376215">
+          <caret line="17915" column="6" lean-forward="false" selection-start-line="17915" selection-start-column="3" selection-end-line="17915" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#755#763#0" expanded="true" />
-            <element signature="e#819#827#0" expanded="true" />
-            <element signature="e#891#905#0" expanded="true" />
-            <element signature="e#1191#1199#0" expanded="true" />
-            <element signature="e#2809#2904#0" expanded="false" />
-            <element signature="e#3485#3597#0" expanded="false" />
-            <element signature="e#4814#4907#0" expanded="false" />
-            <element signature="e#5272#5331#0" expanded="false" />
-            <marker date="1512019009962" expanded="true" signature="516:530" ph="select * fro... employees" />
-            <marker date="1512019009962" expanded="true" signature="516:538" ph="select * fro... user_log" />
-            <marker date="1512019009962" expanded="true" signature="2523:2579" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="2529:2579" ph="INSERT INTO user_log... " />
-            <marker date="1512019009962" expanded="true" signature="4575:4631" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="4863:4905" ph="INSERT INTO Recommendations... " />
-            <marker date="1512019009962" expanded="true" signature="5043:5064" ph="INSERT INTO Recommendations... " />
+            <element signature="e#815#823#0" expanded="true" />
+            <element signature="e#879#887#0" expanded="true" />
+            <element signature="e#951#965#0" expanded="true" />
+            <element signature="e#1247#1255#0" expanded="true" />
+            <element signature="e#2857#2952#0" expanded="false" />
+            <element signature="e#4854#4947#0" expanded="false" />
+            <element signature="e#5312#5371#0" expanded="false" />
+            <marker date="1512770028050" expanded="true" signature="579:597" ph="select * fro... user_log" />
+            <marker date="1512770028050" expanded="true" signature="579:598" ph="select * fro... users" />
+            <marker date="1512770028050" expanded="true" signature="2579:2627" ph="UPDATE user_... " />
+            <marker date="1512770028050" expanded="true" signature="4623:4671" ph="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/u.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abc/convert/MovieDataConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="80" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/prediction/recommender/ItemRecommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/movies.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376215">
+          <caret line="17915" column="6" lean-forward="false" selection-start-line="17915" selection-start-column="3" selection-end-line="17915" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#815#823#0" expanded="true" />
+            <element signature="e#879#887#0" expanded="true" />
+            <element signature="e#951#965#0" expanded="true" />
+            <element signature="e#1247#1255#0" expanded="true" />
+            <element signature="e#2857#2952#0" expanded="false" />
+            <element signature="e#4854#4947#0" expanded="false" />
+            <element signature="e#5312#5371#0" expanded="false" />
+            <marker date="1512770028050" expanded="true" signature="579:597" ph="select * fro... user_log" />
+            <marker date="1512770028050" expanded="true" signature="579:598" ph="select * fro... users" />
+            <marker date="1512770028050" expanded="true" signature="2579:2627" ph="UPDATE user_... " />
+            <marker date="1512770028050" expanded="true" signature="4623:4671" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
@@ -675,21 +779,17 @@
           <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#755#763#0" expanded="true" />
-            <element signature="e#819#827#0" expanded="true" />
-            <element signature="e#891#905#0" expanded="true" />
-            <element signature="e#1191#1199#0" expanded="true" />
-            <element signature="e#2809#2904#0" expanded="false" />
-            <element signature="e#3485#3597#0" expanded="false" />
-            <element signature="e#4814#4907#0" expanded="false" />
-            <element signature="e#5272#5331#0" expanded="false" />
-            <marker date="1512019009962" expanded="true" signature="516:530" ph="select * fro... employees" />
-            <marker date="1512019009962" expanded="true" signature="516:538" ph="select * fro... user_log" />
-            <marker date="1512019009962" expanded="true" signature="2523:2579" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="2529:2579" ph="INSERT INTO user_log... " />
-            <marker date="1512019009962" expanded="true" signature="4575:4631" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="4863:4905" ph="INSERT INTO Recommendations... " />
-            <marker date="1512019009962" expanded="true" signature="5043:5064" ph="INSERT INTO Recommendations... " />
+            <element signature="e#815#823#0" expanded="true" />
+            <element signature="e#879#887#0" expanded="true" />
+            <element signature="e#951#965#0" expanded="true" />
+            <element signature="e#1247#1255#0" expanded="true" />
+            <element signature="e#2857#2952#0" expanded="false" />
+            <element signature="e#4854#4947#0" expanded="false" />
+            <element signature="e#5312#5371#0" expanded="false" />
+            <marker date="1512770028050" expanded="true" signature="579:597" ph="select * fro... user_log" />
+            <marker date="1512770028050" expanded="true" signature="579:598" ph="select * fro... users" />
+            <marker date="1512770028050" expanded="true" signature="2579:2627" ph="UPDATE user_... " />
+            <marker date="1512770028050" expanded="true" signature="4623:4671" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
@@ -900,35 +1000,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation_SQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="844">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/userlog/Recommendation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="2" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="320">
+          <caret line="95" column="115" lean-forward="false" selection-start-line="95" selection-start-column="115" selection-end-line="95" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#755#763#0" expanded="true" />
-            <element signature="e#819#827#0" expanded="true" />
-            <element signature="e#891#905#0" expanded="true" />
-            <element signature="e#1191#1199#0" expanded="true" />
-            <element signature="e#2809#2904#0" expanded="false" />
-            <element signature="e#3485#3597#0" expanded="false" />
-            <element signature="e#4814#4907#0" expanded="false" />
-            <element signature="e#5272#5331#0" expanded="false" />
-            <marker date="1512019009962" expanded="true" signature="516:530" ph="select * fro... employees" />
-            <marker date="1512019009962" expanded="true" signature="516:538" ph="select * fro... user_log" />
-            <marker date="1512019009962" expanded="true" signature="2523:2579" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="2529:2579" ph="INSERT INTO user_log... " />
-            <marker date="1512019009962" expanded="true" signature="4575:4631" ph="UPDATE user_... " />
-            <marker date="1512019009962" expanded="true" signature="4863:4905" ph="INSERT INTO Recommendations... " />
-            <marker date="1512019009962" expanded="true" signature="5043:5064" ph="INSERT INTO Recommendations... " />
+            <element signature="e#815#823#0" expanded="true" />
+            <element signature="e#879#887#0" expanded="true" />
+            <element signature="e#951#965#0" expanded="true" />
+            <element signature="e#1247#1255#0" expanded="true" />
+            <element signature="e#2857#2952#0" expanded="false" />
+            <element signature="e#4854#4947#0" expanded="false" />
+            <element signature="e#5312#5371#0" expanded="false" />
+            <marker date="1512770028050" expanded="true" signature="579:597" ph="select * fro... user_log" />
+            <marker date="1512770028050" expanded="true" signature="579:598" ph="select * fro... users" />
+            <marker date="1512770028050" expanded="true" signature="2579:2627" ph="UPDATE user_... " />
+            <marker date="1512770028050" expanded="true" signature="4623:4671" ph="UPDATE user_... " />
           </folding>
         </state>
       </provider>
