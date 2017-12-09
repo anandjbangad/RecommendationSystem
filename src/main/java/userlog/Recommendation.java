@@ -149,5 +149,38 @@ public class Recommendation
             }
         }
     }
+    public String abc(String RequestedId) throws SQLException {
+        ResultSet myRs = null;
+        Statement myStmt = null;
+        Connection myConn = null;
+        String response ="";
+        try {
+            myConn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Anand J Bangad\\testDB.db");
+            myStmt = myConn.createStatement();
+            System.out.println("Opened database successfully");
+            myRs = myStmt.executeQuery("select * from users");
+            String sql = "SELECT recommendation " + "FROM users WHERE id = ?";
+            PreparedStatement pstmt  = myConn.prepareStatement(sql);
+            pstmt.setString(1,RequestedId);
+            ResultSet resultSet = pstmt.executeQuery();
+            response = resultSet.getString("recommendation");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (myRs != null) {
+                myRs.close();
+            }
+
+            if (myStmt != null) {
+                myStmt.close();
+            }
+
+            if (myConn != null) {
+                myConn.close();
+            }
+        }
+        return response;
+
+    }
 
 }
