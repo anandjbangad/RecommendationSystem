@@ -13,7 +13,7 @@ public class Recommendation
         Statement myStmt = null;
         ResultSet myRs = null;
         try {
-            myConn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Anand J Bangad\\testDB.db");
+            myConn = DriverManager.getConnection("jdbc:sqlite:/home/cs5604f17_fe/gblv2/db/developent.sqlite3");
             myStmt = myConn.createStatement();
             System.out.println("Opened database successfully");
             myRs = myStmt.executeQuery("select * from users");
@@ -151,7 +151,7 @@ public class Recommendation
         Connection myConn = null;
         String response ="";
         try {
-            myConn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Anand J Bangad\\testDB.db");
+            myConn = DriverManager.getConnection("jdbc:sqlite:/home/cs5604f17_fe/gblv2/db/developent.sqlite3");
             myStmt = myConn.createStatement();
             System.out.println("Opened database successfully");
             myRs = myStmt.executeQuery("select * from users");

@@ -1,9 +1,9 @@
 package userlog;
 
 import org.apache.solr.handler.RequestHandlerBase;
+import org.apache.solr.handler.component.SearchHandler;
 import org.apache.solr.request.SolrQueryRequest;
 import org.apache.solr.response.SolrQueryResponse;
-
 public class RequestHandler extends RequestHandlerBase {
 
     @Override
@@ -12,6 +12,9 @@ public class RequestHandler extends RequestHandlerBase {
         String id = solrQueryRequest.getParams().get("id");
         String recommendedKeywords =  recommendation.abc(id);
         solrQueryResponse.addResponse(recommendedKeywords);
+        SearchHandler sc = new SearchHandler();
+
+
     }
 
     @Override
